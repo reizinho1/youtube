@@ -1,7 +1,6 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -15,5 +14,7 @@
     "mongoose": "^6.0.14",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
