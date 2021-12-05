@@ -17,7 +17,7 @@ mongoose.connect(
   process.env.MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
-    console.log("Connected to MongoDB");
+    console.log("Conectado ao MongoDB");
   }
 );
 app.use("/images", express.static(path.join(__dirname, "public/images")));
@@ -39,7 +39,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
   try {
-    return res.status(200).json("File uploded successfully");
+    return res.status(200).json("Arquivo mandado com sucesso");
   } catch (error) {
     console.error(error);
   }
